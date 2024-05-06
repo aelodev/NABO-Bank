@@ -15,6 +15,9 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    public Usuario(String nombre, String apellidos, String usuario) {
+    }
+
     public String getApellidos() {
         return apellidos;
     }

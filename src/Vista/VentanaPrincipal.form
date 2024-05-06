@@ -48,7 +48,7 @@
                 <properties>
                   <background color="-15065300"/>
                   <foreground color="-132097"/>
-                  <text value="Usuario:"/>
+                  <text value="User:"/>
                 </properties>
               </component>
               <component id="66bd5" class="javax.swing.JLabel">
@@ -58,7 +58,7 @@
                 <properties>
                   <background color="-15065300"/>
                   <foreground color="-132097"/>
-                  <text value="Contraseña:"/>
+                  <text value="Password:"/>
                 </properties>
               </component>
               <component id="d9f1b" class="javax.swing.JPasswordField" binding="password">
@@ -89,7 +89,7 @@
                 <properties>
                   <background color="-15065300"/>
                   <foreground color="-132097"/>
-                  <text value="Entrar"/>
+                  <text value="Accept"/>
                 </properties>
               </component>
             </children>
@@ -115,7 +115,7 @@
                   <foreground color="-132097"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Bienvenido al Banco NABO"/>
+                  <text value="Welcome to NABO Bank"/>
                 </properties>
               </component>
             </children>

@@ -34,13 +34,13 @@ public class VentanaPrincipal extends JFrame{
                 try {
                     conexion.conectar();
                     ctrlUser = new ControladorUsuario(conexion);
-                    if(ctrlUser.comprobarUsuario(textField1.getText(), password.getText())){
-                        JOptionPane.showMessageDialog(null, "Usuario correcto");
-
-                        VentanaUsuario ventanaUsuario = new VentanaUsuario(ctrlUser.obtenerUsuario(textField1.getText()));
+                    if(ctrlUser.comprobarUsuario(textField1.getText(), new String(password.getPassword()))){
+                        JOptionPane.showMessageDialog(null, "Succesful login", "Success", JOptionPane.INFORMATION_MESSAGE);
+                        VentanaUsuario ventanaUsuario;
+                        ventanaUsuario = new VentanaUsuario(ctrlUser.obtenerUsuario(textField1.getText()), conexion, ctrlUser);
                         dispose();
                     }else{
-                        JOptionPane.showMessageDialog(null, "Usuario incorrecto", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Incorrect user", "Error", JOptionPane.ERROR_MESSAGE);
                     }
                 } catch (SQLException ex) {
                     ex.printStackTrace();
