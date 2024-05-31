@@ -2,14 +2,10 @@
 
 <img alt="Logo" height="200" src="/src/media/logo.png" width="200" style="display: flex; margin: auto"/>
 
----
-
 ## Description
 
 NABO Bank is a simple banking application where you can deposit, transfer, see the history of your transactions.
 It is a simple project to practice the concepts of Java Swing GUI, connection with Database and writing files.
-
----
 
 ## Features
 
@@ -17,8 +13,6 @@ It is a simple project to practice the concepts of Java Swing GUI, connection wi
 - Transfer money
 - See the history of transactions
 - Save the history of transactions in a file
-
----
 
 ## Technologies
 
@@ -29,8 +23,6 @@ It is a simple project to practice the concepts of Java Swing GUI, connection wi
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)]()
 
 [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)]()
-
----
 
 ## How to use
 
@@ -74,8 +66,6 @@ VALUES (1, 'username', 'password', 'First Name', 'Last Name', 100.0);
 7. Log in with the user you created in the database
 8. Try the features
 
----
-
 ## Screenshots
 
 ![Login](/src/media/screenshots/login.png)
@@ -90,13 +80,9 @@ VALUES (1, 'username', 'password', 'First Name', 'Last Name', 100.0);
 
 ![Export](/src/media/screenshots/export.png)
 
----
-
 ## License
 
 This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## Developed by
 
