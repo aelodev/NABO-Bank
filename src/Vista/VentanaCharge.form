@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Vista.VentanaCharge">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-15065300"/>
+      <foreground color="-132097"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="bb50c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15065300"/>
+          <foreground color="-132097"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="657d6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-15065300"/>
+              <font name="Inter Semi Bold" size="24"/>
+              <foreground color="-132097"/>
+              <text value="Charge"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="68d9f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15065300"/>
+          <foreground color="-132097"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="4e65e" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-15065300"/>
+              <foreground color="-132097"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="3f3b0" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="4" hsize-policy="4" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="50" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15065300"/>
+          <foreground color="-132097"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="a2dd5" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-15065300"/>
+              <foreground color="-132097"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6e4fe" class="javax.swing.JTextField" binding="numberField">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="50" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15065300"/>
+                  <font name="Inter Semi Bold" size="24"/>
+                  <foreground color="-132097"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4f704" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-15065300"/>
+              <foreground color="-132097"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6f9f4" class="javax.swing.JButton" binding="addButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15065300"/>
+                  <foreground color="-132097"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Add"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

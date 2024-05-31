@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BancoGUI">
+    <output-path>$PROJECT_DIR$/out/artifacts/BancoGUI</output-path>
+    <root id="archive" name="BancoGUI.jar" />
+  </artifact>
+</component>

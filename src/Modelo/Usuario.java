@@ -6,13 +6,15 @@ public class Usuario {
     private String usuario;
     private String password;
     private float saldo;
+    private int id;
 
-    public Usuario(String nombre, String apellidos, String usuario, String password, float saldo) {
+    public Usuario(String nombre, String apellidos, String usuario, String password, float saldo, int id) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.usuario = usuario;
         this.password = password;
         this.saldo = saldo;
+        this.id = id;
     }
 
     public Usuario(String nombre, String apellidos, String usuario) {
@@ -56,5 +58,9 @@ public class Usuario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getId() {
+        return id;
     }
 }
