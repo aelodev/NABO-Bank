@@ -86,4 +86,4 @@ This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) 
 
 ## Developed by
 
-- This project was developed by Alejandro Lucena, aka Lucenabo.
+This project was developed by Alejandro Lucena, aka Lucenabo.
