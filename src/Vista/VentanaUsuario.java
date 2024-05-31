@@ -90,5 +90,12 @@ public class VentanaUsuario extends JFrame{
                 });
             }
         });
+        logOutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+            }
+        });
     }
 }

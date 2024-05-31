@@ -18,14 +18,14 @@ public class ControladorUsuario {
     }
 
     public boolean comprobarUsuario(String usuario, String password) throws SQLException {
-        String consulta = "SELECT * FROM banco WHERE usuario = '" + usuario + "' AND password = '" + password + "'";
+        String consulta = "SELECT * FROM users WHERE usuario = '" + usuario + "' AND password = '" + password + "'";
         Statement stmt = connection.createStatement();
         ResultSet rset = stmt.executeQuery(consulta);
         return rset.next();
     }
 
     public Usuario obtenerUsuario(String usuario) throws SQLException {
-        String consulta = "SELECT * FROM banco WHERE usuario = '" + usuario + "'";
+        String consulta = "SELECT * FROM users WHERE usuario = '" + usuario + "'";
         Statement stmt = connection.createStatement();
         ResultSet rset = stmt.executeQuery(consulta);
         if (rset.next()) {
@@ -40,7 +40,7 @@ public class ControladorUsuario {
 
     public ArrayList<Usuario> obtenerTodosUsuarios() {
         ArrayList<Usuario> lista = new ArrayList<Usuario>();
-        String consulta = "SELECT * FROM banco";
+        String consulta = "SELECT * FROM users";
         try {
             ResultSet rset = conexion.ejectuarSelect(consulta);
             while (rset.next()) {
@@ -77,8 +77,8 @@ public class ControladorUsuario {
             if (saldo1 >= num) {
                 saldo1 -= num;
                 saldo2 += num;
-                String consulta1 = "UPDATE banco SET saldo = " + saldo1 + " WHERE usuario = '" + usuarioEnviador + "'";
-                String consulta2 = "UPDATE banco SET saldo = " + saldo2 + " WHERE usuario = '" + usuarioReceptor + "'";
+                String consulta1 = "UPDATE users SET saldo = " + saldo1 + " WHERE usuario = '" + usuarioEnviador + "'";
+                String consulta2 = "UPDATE users SET saldo = " + saldo2 + " WHERE usuario = '" + usuarioReceptor + "'";
                 Statement stmt = connection.createStatement();
                 stmt.executeUpdate(consulta1);
                 stmt.executeUpdate(consulta2);
@@ -118,7 +118,7 @@ public class ControladorUsuario {
 
     public List<Historial> obtenerHistorial(String usuario) {
         List<Historial> lista = new ArrayList<Historial>();
-        String consulta = "SELECT h.* FROM historial h JOIN banco b ON h.usuario_id = b.id WHERE b.usuario = '" + usuario + "'";
+        String consulta = "SELECT h.* FROM historial h JOIN users b ON h.usuario_id = b.id WHERE b.usuario = '" + usuario + "'";
         try {
             ResultSet rset = conexion.ejectuarSelect(consulta);
             while (rset.next()) {
@@ -171,7 +171,7 @@ public class ControladorUsuario {
         try {
             float saldo = obtenerSaldo(usuario);
             saldo += amount;
-            String consulta = "UPDATE banco SET saldo = " + saldo + " WHERE usuario = '" + usuario + "'";
+            String consulta = "UPDATE users SET saldo = " + saldo + " WHERE usuario = '" + usuario + "'";
             Statement stmt = connection.createStatement();
             stmt.executeUpdate(consulta);
         } catch (SQLException e) {

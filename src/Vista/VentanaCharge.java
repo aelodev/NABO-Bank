@@ -20,7 +20,7 @@ public class VentanaCharge extends JFrame {
         setContentPane(panel1);
         setTitle("Charge - NABO Bank");
         setIconImage(icon.getImage());
-        setSize(500, 500);
+        setSize(300, 300);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setVisible(true);
@@ -42,7 +42,7 @@ public class VentanaCharge extends JFrame {
                             ctrlUser.addSaldo(usuario.getUsuario(), amount);
                             usuario.setSaldo(usuario.getSaldo() + amount);
                             ctrlUser.updateHistory(usuario.getUsuario(), "Charge", amount);
-                            numberField.setText("");
+                            numberField.setText("0");
                         }
                     } catch (NumberFormatException ex){
                         JOptionPane.showMessageDialog(null, "Please enter a valid number", "Error", JOptionPane.ERROR_MESSAGE);

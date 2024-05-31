@@ -7,6 +7,7 @@ import Modelo.Usuario;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -15,16 +16,21 @@ public class VentanaHistorial extends JFrame{
     private JPanel panel1;
     private JTable table1;
     private JButton exitButton;
+    private JScrollPane scroll1;
     ImageIcon icon = new ImageIcon(getClass().getResource("../media/logo.png"));
 
     public VentanaHistorial(Usuario usuario, ControladorUsuario ctrlUser, ConexionMySQL conexion){
         setContentPane(panel1);
         setTitle("History - NABO Bank");
         setIconImage(icon.getImage());
-        setSize(400, 300);
+        setSize(500, 300);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setVisible(true);
+        scroll1.setBackground(new Color(26,31,44, 3));
+        scroll1.getViewport().setOpaque(false);
+        scroll1.setForeground(new Color(26,31,44, 3));
+        scroll1.setBorder(BorderFactory.createEmptyBorder());
 
         DefaultTableModel modelo = new DefaultTableModel() {
             @Override
